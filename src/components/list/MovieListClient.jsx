@@ -29,7 +29,7 @@ const MovieListClient = ({ list }) => {
     <>
     <div className="md:hidden">     <OrderListButtons /></div>
  
-      <div className="relative rounded-lg flex-grow scrollbar-hidden overflow-auto scroll-smooth scoll-duration-600 pt-4 md:pt-0">
+      <div className="relative rounded-lg bg-red-500   flex-grow scrollbar-hidden overflow-auto scroll-smooth scoll-duration-600 pt-4 md:pt-0">
         <div className="w-full absolute p-1">
           {movieList && movieList.length > 0 ? (
             movieList.map((element, index) => (
