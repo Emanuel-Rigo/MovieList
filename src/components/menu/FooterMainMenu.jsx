@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { CiCircleList, CiSquarePlus } from "react-icons/ci";
 import SearchBar from "./SearchBar";
 import OrderListButtons from "./OrderListButtons";
+import CardMenuMovie from "./CardMenuMovie";
 
 export const FooterMainMenu = () => {
   const router = useRouter();
@@ -13,6 +14,9 @@ export const FooterMainMenu = () => {
 
   return (
     <div className="w-full flex flex-col gap-4 justify-between ">
+      <div>
+        <CardMenuMovie></CardMenuMovie>
+      </div>
       {pathname == "/" ? (
         <Link
           style={{ fontSize: "4rem" }}
@@ -31,11 +35,11 @@ export const FooterMainMenu = () => {
       >
         <CiSquarePlus />
       </Link>
-      <div>
-        <SearchBar></SearchBar>
-      </div>
       <div className="hidden md:block">
         <OrderListButtons />
+      </div>{" "}
+      <div>
+        <SearchBar></SearchBar>
       </div>
     </div>
   );

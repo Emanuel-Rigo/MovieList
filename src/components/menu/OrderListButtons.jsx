@@ -44,7 +44,7 @@ const OrderListButtons = () => {
         className="bg-blue-700 hover:bg-blue-900 text-white p-2 rounded"
         onClick={obtenerObjetoAleatorio}
       >
-        Rando
+        Random
       </button>
     </div>
   );

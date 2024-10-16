@@ -37,10 +37,12 @@ const SearchBar = ({ movies }) => {
   };
 
   return (
-    <div className="">
+    <div className="w-full">
+      {" "}
+      {/* Cambiado para ocupar el 100% del ancho */}
       <form
         // onSubmit={handleSearch}
-        className="flex items-center w-full max-w-md bg-white rounded-full shadow-md border border-gray-300"
+        className="flex items-center w-full bg-white rounded-xl shadow-md border border-gray-300"
       >
         <input
           type="text"
@@ -51,18 +53,11 @@ const SearchBar = ({ movies }) => {
         />
         <button
           type="submit"
-          className="flex items-center justify-center w-12 h-12  text-gray-400 hover:text-gray-800 rounded-full  focus:ring-2 focus:ring-blue-300"
+          className="flex items-center justify-center w-12 h-12 text-gray-400 hover:text-gray-800 rounded-full focus:ring-2 focus:ring-blue-300"
         >
           <FaSearch />
         </button>
       </form>
-
-      {/* Mostrar el título de la película seleccionada */}
-      {movie && (
-        <div className="mt-4">
-          <p>Película seleccionada: {movie.title}</p>
-        </div>
-      )}
     </div>
   );
 };

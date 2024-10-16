@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="h-screen w-screen flex items-center">
       <div
-        className="container rounded-xl bg-neutral-900 mx-auto grid lg:grid-cols-3 gap3 h-full lg:h-5/6 overflow-auto"
+        className="container rounded-xl bg-neutral-800 mx-auto grid lg:grid-cols-3 gap3 h-full lg:h-5/6 overflow-auto"
         style={{ gridTemplateColumns: "1fr 1fr 25rem" }}
       >
         <div className="h-full flex flex-col justify-between p-4 mb-8 lg:mb-auto">
