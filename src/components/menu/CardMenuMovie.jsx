@@ -2,7 +2,7 @@ import React from "react";
 
 const CardMenuMovie = () => {
   return (
-    <div className="card lg:card-side bg-base-100 bg-neutral-950 rounded-xl shadow-xl flex w-full">
+    <div className="card lg:card-side bg-base-100 bg-neutral-950 rounded-lg shadow-xl flex w-full">
       <div className="card-body w-1/2 py-5 ps-5">
         <h2 className="card-title">New album is released!</h2>
         <p>Click the button to listen on Spotiwhy app.</p>

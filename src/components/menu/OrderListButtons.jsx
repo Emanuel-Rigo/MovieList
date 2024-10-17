@@ -27,21 +27,21 @@ const OrderListButtons = () => {
   }
 
   return (
-    <div className="flex justify-between px-1 mb-3">
+    <div className="flex justify-between">
       <button
-        className="bg-blue-700 hover:bg-blue-900 text-white p-2 rounded"
+        className="bg-neutral-900 hover:bg-neutral-950 text-white p-2 rounded-lg"
         onClick={ordenarPorFecha}
       >
         Ordenar por fecha
       </button>
       <button
-        className="bg-blue-700 hover:bg-blue-900 text-white p-2 rounded"
+        className="bg-neutral-900 hover:bg-neutral-950 text-white p-2 rounded-lg"
         onClick={ordenarPorTitulo}
       >
         Ordenar por título
       </button>
       <button
-        className="bg-blue-700 hover:bg-blue-900 text-white p-2 rounded"
+        className="bg-neutral-900 hover:bg-neutral-950 text-white p-2 rounded-lg"
         onClick={obtenerObjetoAleatorio}
       >
         Random
